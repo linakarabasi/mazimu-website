@@ -40,7 +40,8 @@
         <img src="house.png" style="width: 60px; height: 60px; margin-bottom: 8px;" /><br>
         Mazimu
     </div>
-    <div class="tagline">Η οικογένειά μου, πάντα μαζί μου.</div>
+    <div class="tagline" id="tagline-el">Η οικογένειά μου, πάντα μαζί μου.</div>
+    <div class="tagline" id="tagline-en" style="display:none">My family, always with me.</div>
 
     <div class="lang-switch">
         <a href="#" onclick="showLang('en')">English</a>
@@ -175,6 +176,8 @@
         function showLang(lang) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             document.getElementById(lang).classList.add('active');
+            document.getElementById('tagline-el').style.display = lang === 'el' ? 'block' : 'none';
+            document.getElementById('tagline-en').style.display = lang === 'en' ? 'block' : 'none';
         }
     </script>
 </body>
