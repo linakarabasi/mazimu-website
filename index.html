@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazimu — Η οικογένειά μου, πάντα μαζί μου.</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0F172A;
+            color: #E5E7EB;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: #4F46E5;
+            margin-bottom: 8px;
+        }
+        .tagline {
+            font-size: 18px;
+            color: #94A3B8;
+            font-style: italic;
+            margin-bottom: 48px;
+        }
+        .description {
+            font-size: 16px;
+            color: #CBD5E1;
+            max-width: 500px;
+            line-height: 1.8;
+            margin-bottom: 48px;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 48px;
+            max-width: 400px;
+        }
+        .feature {
+            background: #1E293B;
+            border-radius: 12px;
+            padding: 16px 24px;
+            text-align: left;
+            font-size: 15px;
+            color: #CBD5E1;
+        }
+        .feature span {
+            margin-right: 8px;
+        }
+        .coming-soon {
+            background: #1E293B;
+            border-radius: 16px;
+            padding: 24px 32px;
+            margin-bottom: 48px;
+            max-width: 400px;
+        }
+        .coming-soon h3 {
+            color: #4F46E5;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .coming-soon p {
+            color: #94A3B8;
+            font-size: 14px;
+        }
+        .links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .links a {
+            color: #94A3B8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .links a:hover {
+            color: #4F46E5;
+        }
+        .contact {
+            margin-top: 48px;
+            color: #94A3B8;
+            font-size: 14px;
+        }
+        .contact a {
+            color: #4F46E5;
+            text-decoration: none;
+        }
+        .lang-switch {
+            margin-bottom: 32px;
+        }
+        .lang-switch a {
+            color: #4F46E5;
+            text-decoration: none;
+            margin: 0 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .section { display: none; }
+        .section.active { display: contents; }
+    </style>
+</head>
+<body>
+    <div class="logo">Mazimu</div>
+
+    <div class="lang-switch">
+        <a href="#" onclick="showLang('el')">Ελληνικά</a>
+        <a href="#" onclick="showLang('en')">English</a>
+    </div>
+
+    <div id="el" class="section active">
+        <div class="tagline">Η οικογένειά μου, πάντα μαζί μου.</div>
+        <div class="description">
+            Το Mazimu βοηθά τις οικογένειες να συντονίζουν τις καθημερινές τους εργασίες — χωρίς εντάσεις και χωρίς να χρειάζεται κάποιος να θυμίζει συνεχώς στους άλλους τι πρέπει να γίνει.
+        </div>
+        <div class="features">
+            <div class="feature"><span>✅</span>Δημιουργία και ανάθεση εργασιών</div>
+            <div class="feature"><span>🎨</span>Κατηγοριοποίηση με χρώματα</div>
+            <div class="feature"><span>🔔</span>Υπενθυμίσεις</div>
+            <div class="feature"><span>💬</span>Σχόλια σε κάθε εργασία</div>
+            <div class="feature"><span>👥</span>Κοινή ή εναλλασσόμενη ανάθεση</div>
+            <div class="feature"><span>🔁</span>Επαναλαμβανόμενες εργασίες</div>
+        </div>
+        <div class="coming-soon">
+            <h3>🚀 Σύντομα διαθέσιμο</h3>
+            <p>Η εφαρμογή είναι σύντομα διαθέσιμη στο Google Play και App Store.</p>
+        </div>
+        <div class="links">
+            <a href="privacy-policy.html">Πολιτική Απορρήτου</a>
+            <a href="terms.html">Όροι Χρήσης</a>
+        </div>
+        <div class="contact">
+            Επικοινωνία: <a href="mailto:mazimu.app@gmail.com">mazimu.app@gmail.com</a>
+        </div>
+    </div>
+
+    <div id="en" class="section">
+        <div class="tagline">My family, always with me.</div>
+        <div class="description">
+            Mazimu helps families coordinate their daily tasks — without tension and without anyone having to constantly remind others what needs to be done.
+        </div>
+        <div class="features">
+            <div class="feature"><span>✅</span>Create and assign tasks</div>
+            <div class="feature"><span>🎨</span>Organize with colors</div>
+            <div class="feature"><span>🔔</span>Reminders</div>
+            <div class="feature"><span>💬</span>Comments on each task</div>
+            <div class="feature"><span>👥</span>Shared or rotating assignment</div>
+            <div class="feature"><span>🔁</span>Recurring tasks</div>
+        </div>
+        <div class="coming-soon">
+            <h3>🚀 Coming soon</h3>
+            <p>The app will be available on Google Play and the App Store soon.</p>
+        </div>
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="contact">
+            Contact: <a href="mailto:mazimu.app@gmail.com">mazimu.app@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
